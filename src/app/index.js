@@ -1,7 +1,11 @@
 const { Router } = require('express');
 
+const signup = require('./signup/signup');
+const home = require('./home/home')
+
 const appRouter = new Router();
 
-appRouter.use('/signup', require('./signup/signup'));
+appRouter.use('/', home)
+appRouter.use('/signup', signup);
 
 module.exports = appRouter;
