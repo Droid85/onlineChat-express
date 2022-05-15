@@ -1,0 +1,10 @@
+.header {
+	background-color: #eee;
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+.error-message {
+	color: red;
+	font-weight: 700;
+}

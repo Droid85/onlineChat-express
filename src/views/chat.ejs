@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('_partials/head', title='Chat'); -%>
+	<body>
+		<%- include('_partials/header', { auth }); -%>
+		<section class="chat-section">
+			<section class="users-section"></section>
+			<section class="message-section"></section>
+			<section class="chat-controls">
+				<input type="text" name="message" class="message-input">
+				<button class="send-button">Send</button>
+			</section>
+		</section>
+		<%- include('_partials/footer'); -%>
+	</body>
+</html>
