@@ -11,4 +11,12 @@ chatRouter.post('/', (req, res) => {
 	res.render('chat', {})
 })
 
+chatRouter.delete('/', (req, res) => {
+	return res.send('DELETED')
+})
+
+chatRouter.put('/', (req, res) => {
+	return res.send('PUT')
+})
+
 module.exports = chatRouter;
